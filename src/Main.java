@@ -4,9 +4,14 @@ public class Main {
         container.addCount(5672);
         System.out.println(container.getCount());
 
-        // TODO: ниже напишите код для выполнения задания:
-        //  С помощью цикла и преобразования чисел в символы найдите все коды
-        //  букв русского алфавита — заглавных и строчных, в том числе буквы Ё.
+        for (int i = 1040; i <= 1103; i++) {
+            System.out.println((char) i + " - " + i);
 
+            if ((char) i == 'Е') {
+                System.out.println((char) 1025 + " - " + 1025);
+            } else if ((char) i == 'е') {
+                System.out.println((char) 1105 + " - " + 1105);
+            }
+        }
     }
 }
